@@ -1,0 +1,14 @@
+<h1>Photos#new</h1>
+<p>Find me in app/views/photos/new.html.erb</p>
+
+    <%= form_for @photo,url:photos_path do |f| %>
+ <!-- 追加箇所 開始 -->
+  <div class="field">
+    <% if @photo.image? %>
+      <div class="thumbnail">
+        <%= image_tag @photo.image.url %>
+      </div>
+    <% end %><br>
+	    <%= f.file_field :image %>
+	    <%= f.submit "新規登録", class:"btn btn-primary"%>
+    <% end %>
