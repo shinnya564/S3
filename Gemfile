@@ -63,7 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # for image uploader with AWS S3
 gem 'carrierwave'
-gem 'fog'
+gem 'fog-aws'
 
 
 gem 'dotenv-rails'
